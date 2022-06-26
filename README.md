@@ -39,4 +39,4 @@ Mobile Modal
 ### Links
 
 - Solution URL: [GitHub](https://github.com/xuanhung1509/interactive-comment-section)
-- Live Site URL: [Vercel](https://interactive-comment-section.vercel.app/)
+- Live Site URL: [Vercel](https://comment-section-1509.vercel.app) [Netlify](https://comment-section-1509.netlify.app/)

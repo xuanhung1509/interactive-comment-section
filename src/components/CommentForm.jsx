@@ -1,6 +1,5 @@
 import { useState, useRef, useEffect } from 'react';
 import { useCommentContext } from '../context/CommentContext';
-import { serverTimestamp } from 'firebase/firestore';
 import { v4 as uuidv4 } from 'uuid';
 
 function CommentForm() {
@@ -58,7 +57,7 @@ function CommentForm() {
         const comment = {
           id: uuidv4(),
           content,
-          createdAt: serverTimestamp(),
+          createdAt: new Date().toLocaleString('en-US'),
           score: 0,
           user: currentUser,
           replies: [],
@@ -70,7 +69,7 @@ function CommentForm() {
         const reply = {
           id: uuidv4(),
           content,
-          createdAt: serverTimestamp(),
+          createdAt: new Date().toLocaleString('en-US'),
           score: 0,
           replyingTo,
           user: currentUser,
